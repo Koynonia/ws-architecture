@@ -22,7 +22,7 @@ Neste exemplo, o Negócio é exigente em solicitar o que precisa para efetuar se
 6. Executar o comando no terminal: `npm start`.
 7. Criar os arquivos `framewok.ts` e `negocio.ts`.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vOmggR_Bul8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Watch the video](https://img.youtube.com/vi/vOmggR_Bul8/maxresdefault.jpg)](https://youtu.be/vOmggR_Bul8)
 
 ### Fontes
 
