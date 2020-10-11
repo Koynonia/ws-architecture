@@ -1,14 +1,20 @@
-import { Cliente } from "./models/cliente";
-import { ClienteAvatar } from "./models/cliente-avatar";
-import { ClienteDocumentos } from "./models/cliente-documentos";
-import { ClienteHistoricoAcesso } from "./models/cliente-historico-acesso";
-import { ClienteService } from "./models/cliente-service";
-import { ClienteEmail } from "./models/cliente-emails";
+// @ts-ignore
+import { Cliente } from "./models/cliente.ts";
+// @ts-ignore
+import { ClienteAvatar } from "./models/cliente-avatar.ts";
+// @ts-ignore
+import { ClienteDocumentos } from "./models/cliente-documentos.ts";
+// @ts-ignore
+import { ClienteHistoricoAcesso } from "./models/cliente-historico-acesso.ts";
+// @ts-ignore
+import { ClienteService } from "./models/cliente-service.ts";
+// @ts-ignore
+import { ClienteEmail } from "./models/cliente-emails.ts";
 
 const fernando = new Cliente(
   "Fernando M. Oliveira",
   "fernandomoliveira",
-  "fernando@gmail.com"
+  "fernando@mail.com"
 );
 
 const clienteAvatar = new ClienteAvatar(fernando);

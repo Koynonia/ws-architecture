@@ -1,4 +1,4 @@
-import { Cliente } from "../models/cliente";
+import { Cliente } from "../models/cliente.ts";
 
 export class ClienteAvatar {
   constructor(private cliente: Cliente) {}
