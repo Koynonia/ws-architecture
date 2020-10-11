@@ -13,26 +13,18 @@ import { ClienteEmail } from "../models/cliente-emails.ts";
 
 export module Facade {
   export class ClienteFacade {
-    private clienteAvatar: ClienteAvatar;
-    private clienteDocumentos: ClienteDocumentos;
-    private clienteHistoricoAcesso: ClienteHistoricoAcesso;
-    private clienteService: ClienteService;
-    private clienteEmail: ClienteEmail;
+    static removeConta(cliente: Cliente) {
+      const clienteAvatar = new ClienteAvatar(cliente);
+      const clienteDocumentos = new ClienteDocumentos(cliente);
+      const clienteHistoricoAcesso = new ClienteHistoricoAcesso(cliente);
+      const clienteService = new ClienteService(cliente);
+      const clienteEmail = new ClienteEmail(cliente);
 
-    constructor(private cliente: Cliente) {
-      this.clienteAvatar = new ClienteAvatar(cliente);
-      this.clienteDocumentos = new ClienteDocumentos(cliente);
-      this.clienteHistoricoAcesso = new ClienteHistoricoAcesso(cliente);
-      this.clienteService = new ClienteService(cliente);
-      this.clienteEmail = new ClienteEmail(cliente);
-    }
-
-    removeConta() {
-      this.clienteAvatar.remove();
-      this.clienteDocumentos.delete();
-      this.clienteHistoricoAcesso.remove();
-      this.clienteService.delete();
-      this.clienteEmail.envioRemocaoConta();
+      clienteAvatar.remove();
+      clienteDocumentos.delete();
+      clienteHistoricoAcesso.remove();
+      clienteService.delete();
+      clienteEmail.envioRemocaoConta();
     }
   }
 }
